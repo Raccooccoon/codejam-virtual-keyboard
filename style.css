@@ -1,0 +1,100 @@
+
+
+.project__name {
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 50px;
+    color: rgb(19, 99, 61);
+    text-align: center;
+    min-width: 1200px;
+}
+
+.text__container {
+    position: absolute;
+    min-width: 1000px;
+    width: 73%;
+    height: 50%;
+    left: 13.5%;
+    right: 13.5%;
+
+}
+
+.keyboard {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding:  5px 0;
+    background: rgb(19, 99, 61);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    user-select: none;
+    transition: bottom 0.4s;   
+}
+
+
+.keyboard__keys {
+    text-align: center;
+    min-width: 1200px;
+    
+}
+
+.keyboard__key {
+    height: 45px;
+    width: 5%;
+    max-width: 90px;
+    margin: 2px;
+    border-radius: 4px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    font-size: 1.05rem;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.keyboard__key:active {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.active {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.keyboard__key--wide {
+    width: calc(10% + 4px);
+    max-width: 184px;
+}
+
+.keyboard__key--wide--activatable::after {
+    content: "";
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+}
+
+.keyboard__key--active::after {
+    background: rgb(59, 255, 15);
+}
+
+.keyboard__key--extra-wide {
+    width: calc(35% + 24px);
+    max-width: 654px;
+}
+
+.keyboard__key--dark {
+    background: rgba(0, 0, 0, 0.25);
+}
