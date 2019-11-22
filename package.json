@@ -1,0 +1,18 @@
+{
+  "name": "keyboard",
+  "version": "1.0.0",
+  "description": "https://stupefied-euclid-82cff2.netlify.com/",
+  "main": "script.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint script.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
